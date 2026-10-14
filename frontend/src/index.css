@@ -1,0 +1,138 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: #FFF9F2;
+    color: #3D302B;
+    font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: #30241F;
+    font-weight: 800;
+    letter-spacing: -0.025em;
+  }
+}
+
+/* Warm Pastel Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #FFF3E5;
+}
+::-webkit-scrollbar-thumb {
+  background: #FFCA9A;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #FFA45B;
+}
+
+/* Signature Cartoon Boxy Utilities */
+.cartoon-card {
+  background-color: #FFFFFF;
+  border: 1.5px solid #F0DCCB;
+  border-radius: 18px;
+  box-shadow: 3px 4px 0px #F1D8C3;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.cartoon-card-interactive {
+  background-color: #FFFFFF;
+  border: 1.5px solid #F0DCCB;
+  border-radius: 18px;
+  box-shadow: 3px 4px 0px #F1D8C3;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.cartoon-card-interactive:hover {
+  transform: translateY(-2px);
+  border-color: #FFA45B;
+  box-shadow: 4px 6px 0px #E8C7AC;
+}
+
+.cartoon-card-interactive:active {
+  transform: translateY(1px);
+  box-shadow: 1px 2px 0px #E8C7AC;
+}
+
+/* Tactile Buttons */
+.btn-cartoon-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: #FFA45B;
+  color: #30241F;
+  font-weight: 700;
+  border: 1.5px solid #E9C7AA;
+  border-radius: 14px;
+  box-shadow: 2px 3px 0px #D97550;
+  transition: all 0.15s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-cartoon-primary:hover {
+  background-color: #FF9642;
+  transform: translateY(-1.5px);
+  box-shadow: 3px 5px 0px #D97550;
+}
+
+.btn-cartoon-primary:active {
+  transform: translateY(1px);
+  box-shadow: 1px 1px 0px #D97550;
+}
+
+.btn-cartoon-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: #FFFFFF;
+  color: #3D302B;
+  font-weight: 600;
+  border: 1.5px solid #F0DCCB;
+  border-radius: 14px;
+  box-shadow: 2px 3px 0px #F1D8C3;
+  transition: all 0.15s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-cartoon-secondary:hover {
+  background-color: #FFF3E5;
+  border-color: #E9C7AA;
+  transform: translateY(-1.5px);
+  box-shadow: 3px 4px 0px #E8C7AC;
+}
+
+.btn-cartoon-secondary:active {
+  transform: translateY(1px);
+  box-shadow: 1px 1px 0px #E8C7AC;
+}
+
+/* React Flow styling */
+.react-flow__attribution {
+  display: none !important;
+}
+
+.react-flow__edge-path {
+  stroke: #FFA45B !important;
+  stroke-width: 2 !important;
+}
+
+.react-flow__controls button {
+  background-color: #FFFFFF !important;
+  border-bottom: 1px solid #F0DCCB !important;
+  color: #76665E !important;
+}
+
+.react-flow__controls button:hover {
+  background-color: #FFF3E5 !important;
+  color: #D97550 !important;
+}
+
